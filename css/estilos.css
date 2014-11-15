@@ -66,6 +66,9 @@ iframe {
   display: block;
   padding-top: 1.3em;
 }
+.compartir {
+  padding-top: 3em;
+}
 .description-article-section {
   padding-left: 0.5em;
   text-align: justify;
@@ -102,13 +105,21 @@ iframe {
 }
 .image-article-section {
   border: 1px solid #000;
-  box-shadow: 3px 3px 3px #777;
+  box-shadow: 4px 4px 4px #777;
   height: 500px;
   padding-left: 0.2em;
   width: 300px;
 }
 .section-body {
   margin-top: 1.5em;
+}
+.text-video {
+  text-align: center;
+}
+.video {
+  height: 200px;
+  margin: 0 auto;
+  width: 300px;
 }
 @media screen and (min-width: 720px) {
   audio {
@@ -202,6 +213,10 @@ iframe {
     display: inline-block;
     vertical-align: top;
   }
+  .video {
+    height: 250px;
+    width: 400px;
+  }
 }
 @media screen and (min-width: 946px) {
   audio {
@@ -222,10 +237,7 @@ iframe {
     display: block;
     margin-top: 4em;
     text-align: center;
-    padding-right: 20em;
-  }
-  .audio-section-body {
-    padding-right: 20em;
+    padding-left: 1em;
   }
   .avatar {
     text-align: center;
@@ -304,5 +316,9 @@ iframe {
   .description-article-section {
     display: inline-block;
     vertical-align: top;
+  }
+  .video {
+    height: 270px;
+    width: 420px;
   }
 }

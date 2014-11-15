@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" manifest="cache.appcache">
 <head>
     <meta charset="UTF-8">
-    <title>Stella Maris</title>
-    <meta name="description" content=" Catedrática prejubilada de francés, que se dedica a la música y a la literatura. Selecciona escritos en poesía y en prosa de su puño y letra de hace una década, viendo la luz las seleccionadas en este primer" />
+    <meta name="description" content="Stella Maris, Catedrática prejubilada de francés, ha escrito Pálpito Súbito su primer libro." />
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>Stella Maris</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico"/>
     <link href='//fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css"/>
@@ -40,13 +40,17 @@
         </article>
     </section>
     <article class="pesia-pdf">
-        <a class="ancla-poesia icon-book" href="poesia/Alma-mía.pdf">Leé la primera poesía del libro</a>
+        <a class="ancla-poesia icon-book" href="http://www.stellamgb.com/poesia/Alma-mia.pdf">lee la primera poesía del libro</a>
     </article>
     <section class="audio-body">
         <h3 class="audio-section-body">
             Escucha una poesía recitda por la autora:
         </h3>
-        <audio class="audio-section-body" src="#" controls="controls"></audio>
+        <audio class="audio-section-body" src="audio/audio.mp3" controls="controls"></audio>
+    </section>
+    <section class="video">
+        <p class="text-video">Mira un fragmento de la presentación:</p>
+        <video src="video/mama.3gp" class="video" controls codecs=""></video>
     </section>
     <section class="compartir">
         <div class="facebook" id="fb-root"></div>
@@ -82,6 +86,16 @@
             <a href="http://juanbalbuena.es">juanbalbuena.es</a>
         </div>
     </footer>
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45191940-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
     <script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
