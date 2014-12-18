@@ -2,14 +2,17 @@
 <html lang="es" manifest="cache.appcache">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Stella Maris, Catedrática prejubilada de francés, ha escrito Pálpito Súbito su primer libro." />
+    <meta name="theme-color" content="#FF5F5F"/>
+    <meta name="description" content="Stella Maris Gonzalez Balbuena, Catedrática prejubilada de francés, ha escrito Pálpito Súbito su primer libro. Esta es su Web oficial" />
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    <title>Stella Maris</title>
+    <title>Stella Maris Gonzalez Balbuena || Web oficial</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico"/>
     <link href='//fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/estilos.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/codiguito.js"></script>
 </head>
 <body>
     <header>
@@ -21,7 +24,7 @@
                 Stella Maris González
             </h1>
             <h2 class="header-header">
-                Catedrática prejubilada de francés, que se dedica a la música y a la literatura. Selecciona escritos en poesía y en prosa de su puño y letra de hace una década, viendo la luz las seleccionadas en este primer                     libro de poesía.
+                Catedrática prejubilada de francés, dedicada a la música y a la literatura. Selecciona escritos en poesía y en prosa de su puño y letra de hace una década, viendo la luz las seleccionadas en este primer                     libro de poesía.
             </h2>
         </div>
     </header>
@@ -34,23 +37,30 @@
                 Pálpito Súbito:
             </h2>
             <p>
-                Autobiografía emocional de una mujer madura que parte de una infancia entre espesas brumas para más tarde descubrir una infinita ternura gracias a su voluntaria maternidad decidida en solitario. No encontrará al Amor de su vida pero detectará sentimientos internos y sabrá transmitirlos con una fuerza tal que e futuro lector se encontrará imbuido al tiempo que abrumado de la carga sentimental hallada en: Amor, Ternura, Amor-Desamor, Poesías Mías y respirará aliviado con la lectura del último apartado menos intimista dedicado a curiosas personas que nos rodean con el subtítulo de "Fauna Humana"(Mediocres, Predador, Pájaros, Príncipes..).
+                Autobiografía emocional de una mujer madura que parte de una infancia entre espesas brumas para más tarde descubrir una infinita ternura gracias a su voluntaria maternidad decidida en solitario. No encontrará al Amor de su vida pero detectará sentimientos internos y sabrá transmitirlos con una fuerza tal que el futuro lector se encontrará imbuido al tiempo que abrumado de la carga sentimental hallada en: Amor, Ternura, Amor-Desamor, Poesías Mías y respirará aliviado con la lectura del último apartado menos intimista dedicado a curiosas personas que nos rodean con el subtítulo de "Fauna Humana"(Mediocres, Predador, Pájaros, Príncipes..).
                 Es un libro que hará conmover las entrañas del más duro, a la par que muchos lectores se sentirán identificados con emociones contenidas en él.
             </p>
         </article>
     </section>
-    <article class="pesia-pdf">
-        <a class="ancla-poesia icon-book" href="http://www.stellamgb.com/poesia/Alma-mia.pdf">lee la primera poesía del libro</a>
-    </article>
     <section class="audio-body">
+        <article class="poesia-pdf">
+            <a class="ancla-poesia" href="http://www.stellamgb.com/poesia/Alma-mia.pdf">lee la primera poesía del libro<span class="icon-book"></span></a>
+        </article>
         <h3 class="audio-section-body">
-            Escucha una poesía recitda por la autora:
+            Escucha dos poesías recitadas por la autora:
         </h3>
-        <audio class="audio-section-body" src="audio/audio.mp3" controls="controls"></audio>
+        <p>Daría</p>
+        <audio class="audio-section-body" src="audio/poesia.mp3" controls="controls"></audio>
+        <p>Detecto</p>
+        <audio class="audio-section-body" src="audio/poesia-dos.mp3" controls="controls"></audio>
     </section>
-    <section class="video">
+    <section class="video-section">
         <p class="text-video">Mira un fragmento de la presentación:</p>
-        <video src="video/mama.3gp" class="video" controls codecs=""></video>
+        <video class="video" controls>
+            <source src="video/mama.ogv" type='video/ogg; codecs="theora, vorbis"'/>
+            <source src="video/mama.webm" type='video/webm' >
+            <source src="video/mama.mp4" type='video/mp4'>
+        </video>
     </section>
     <section class="compartir">
         <div class="facebook" id="fb-root"></div>
@@ -65,15 +75,11 @@
             <iframe class="footer-inline inline" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47271.281738605896!2d-8.7254259!3d42.22608915000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
             .1!3m3!1m2!1s0xd2f621461b2c193%3A0x7b441dad174bd49f!2sVigo%2C+Pontevedra!5e0!3m2!1ses!2ses!4v1414145069853" width="400" height="220" frameborder="0" style="border:0"></iframe>
             <article class="footer-contacto">
-                <h3>Contacto:</h3>
-                <a href="mailto:stella@stellamgb.com">stella@stellamgb.com</a>
+                <h3 id="contacto" class="contacto">Contacto</h3>
+                <a class="ancla-none" href="mailto:stella@stellamgb.com">stella@stellamgb.com</a>
+                <br/>
+                <a class="ancla-none" href="mailto:stellamgb@hotmail.com">stellamgb@hotmail.com</a>
             </article>
-            <h3 class="ventas-footer">
-                Libros disponibles en:
-            </h3>
-            <a class="ancla-footer" href="#">Sargadelos Dirección: Rúa Urzaiz, 17, 36201 Vigo, Pontevedra. Teléfono:986 22 00 50</a>
-            <a class="ancla-footer" href="#">Versus. Dirección: Rúa de Venezuela, 80, 36204 Vigo, Pontevedra. Teléfono:986 42 02 23</a>
-            <a class="ancla-footer" href="#">...</a>
         </div>
         <div class="developer inline">
             <h3>
@@ -85,6 +91,17 @@
             </p>
             <a href="http://juanbalbuena.es">juanbalbuena.es</a>
         </div>
+        <h3 class="ventas-footer">
+            Libros disponibles en:
+        </h3>
+        <article class="ancla">
+            <p class="ancla-footer">Sargadelos Dirección: Rúa Urzaiz, 17, 36201 Vigo, Pontevedra. Teléfono:986 22 00 50</p>
+            <p class="ancla-footer">Versus. Dirección: Rúa de Venezuela, 80, 36204 Vigo, Pontevedra. Teléfono:986 42 02 23</p>
+            <p class="ancla-footer" href="#">Cartabon 	Calle de Urzáiz, 125, 36205 Vigo, Pontevedra
+                986 37 28 83</p>
+            <p class="ancla-footer" href="#">Nobel Edelmiro Trillo, 19 - 36600 Vilagarcia de Arousa</p>
+            <p class="ancla-footer last-anclaFooter" href="#">Paz Peregrina, 29 bajo - 36001 Pontevedra (PONTEVEDRA)</p>
+        </article>
     </footer>
  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

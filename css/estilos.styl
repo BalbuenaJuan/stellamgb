@@ -35,7 +35,7 @@ textColor = #666
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-book:after {
+.icon-book:before {
   content: "\e600";
   font-size 2em
   text-decoration none
@@ -69,10 +69,20 @@ header
 iframe
   width 320px
 
+.ancla-none
+  display none
+
+.ancla-footer
+  display inline-block
+
 .ancla-poesia
   color textColor
   display block
-  margin-top 4em
+  text-align center
+
+.audio-section-body
+  display block
+  margin 1em auto
   text-align center
 
 .avatar, .header
@@ -81,6 +91,15 @@ iframe
 
 .compartir
   padding-top 3em
+
+.contacto
+  background #ffcb1f
+  border-radius 6px
+  color #000
+  cursor pointer
+  margin-left 1em
+  max-width 90px
+  padding .3em
 
 .description-article-section
   padding-left .5em
@@ -107,6 +126,10 @@ iframe
   border-radius 50%
   height 100px
   width  100px
+
+.img-developer:hover
+  transition 1s
+  transform rotateY(360deg)
 
 .img-header
   border 2px solid Blanco
@@ -144,6 +167,13 @@ iframe
   iframe
     width 320px
 
+  .ancla
+    display inline-block
+    width 100%
+
+  .autor, .developer
+    display inline-block
+
   .img-header
     margin-top 2em
 
@@ -153,14 +183,11 @@ iframe
     vertical-align baseline
 
   .ancla-footer
+    display inline-block
     margin  0
-    padding 0
-    text-align left
-
-  .ancla-footer, .ventas-footer
-    display block
     padding-left 2em
     text-align left
+
 
   .autor
     display inline-block
@@ -211,10 +238,6 @@ iframe
 
   .image-article-section
     padding-left 0
-    transition all 1s linear
-
-  .image-article-section:hover
-    transform scale(1.1)
 
   .image-article-section, .description-article-section
     display inline-block
@@ -223,6 +246,11 @@ iframe
   .video
     height 250px
     width 400px
+
+  .ventas-footer
+    margin-top 4em
+    padding-left 2em
+    text-align left
 
 @media screen and (min-width: 946px)
   audio
@@ -238,13 +266,13 @@ iframe
   iframe
     width 500px
 
+  .ancla
+    width 100%
+
   .ancla-poesia
     color textColor
-    display block
-    margin-top 4em
-    text-align center
-    padding-left 1em
-
+    text-align left
+    padding-left .8em
 
   .avatar
     text-align center
@@ -256,16 +284,6 @@ iframe
     text-align center
     vertical-align top
 
-  .ancla-footer
-    margin 0
-    padding 0
-    text-align left
-
-  .ancla-footer, .ventas-footer
-    display block
-    padding-left 2em
-    text-align left
-
   .autor
     display inline-block
     float left
@@ -276,6 +294,14 @@ iframe
   .autor, .developer
     margin-top 2em
     vertical-align top
+
+  .audio-body
+    display block
+
+  .audio-body, .video-section
+    display inline-block
+    vertical-align top
+    margin-top 4em
 
   .developer
     border-left 2px solid Blanco
@@ -309,14 +335,17 @@ iframe
 
   .image-article-section
     padding-left 0
-    transition all 1s linear
-
-  .image-article-section:hover
-    transform scale(1.1)
 
   .image-article-section, .description-article-section
     display inline-block
     vertical-align top
+
+  .last-anclaFooter
+    padding-bottom 3em
+
+  .poesia-pdf
+    margin 0 auto
+    max-width 800px
 
   .video
     height 270px
